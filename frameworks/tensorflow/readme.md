@@ -1,7 +1,7 @@
 # TensorFlow 2.0 学习笔记
 > 柯博 2020.04.21 1:07  
 
-### Table of Contents
+### Learning progress
 - [ ]  TensorFlow建模流程
 - [ ]  TensorFlow的核心概念
 - [ ]  TensorFlow的层次结构
