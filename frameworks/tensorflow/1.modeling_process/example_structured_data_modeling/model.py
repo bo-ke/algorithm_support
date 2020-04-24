@@ -11,6 +11,7 @@
 
 
 """
+import os
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
@@ -28,7 +29,7 @@ class Model:
         model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
         return model
 
-    def train(self):
+    def train(self, output_dir):
         model = self.create_model()
         model.summary()
         model.compile(optimizer='adam',
@@ -40,8 +41,8 @@ class Model:
                             epochs=30,
                             validation_split=0.2  # 分割一部分训练数据用于验证
                             )
-        model.evaluate(x_test, y_test)
-        model.save('./data/keras_model.h5')
+        os.mkdir(output_dir)
+        model.save(output_dir + '/keras_model.h5')
         self.plot_metric(history, "loss")
         self.plot_metric(history, "AUC")
 
@@ -61,4 +62,4 @@ class Model:
 
 if __name__ == '__main__':
     my_model = Model()
-    my_model.train()
+    my_model.train(output_dir="./data/output")

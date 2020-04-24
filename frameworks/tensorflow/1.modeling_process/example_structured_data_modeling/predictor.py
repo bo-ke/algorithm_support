@@ -13,6 +13,8 @@
 """
 import tensorflow as tf
 
+from dataset_reader import x_test, y_test
+
 model_path = "./data/keras_model.h5"
 
 
@@ -21,4 +23,9 @@ class Predictor:
         self.model = tf.keras.models.load_model(model_path)
 
     def predict(self, x):
-        return self.model.predict(x)
+        pass
+
+
+if __name__ == '__main__':
+    predictor = Predictor()
+    predictor.model.evaluate(x_test, y_test)

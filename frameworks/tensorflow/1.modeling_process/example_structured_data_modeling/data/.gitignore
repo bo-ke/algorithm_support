@@ -1,0 +1,5 @@
+# titanic数据文件
+titanic/
+
+# 模型输出文件
+output/
