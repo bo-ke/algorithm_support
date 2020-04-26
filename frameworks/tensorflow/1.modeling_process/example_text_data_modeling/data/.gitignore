@@ -1,0 +1,5 @@
+# imdb数据文件
+imdb/
+
+# 模型输出文件
+output/
