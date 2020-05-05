@@ -118,13 +118,14 @@ class Trainer:
             self.valid_loss.reset_states()
             self.train_metric.reset_states()
             self.valid_metric.reset_states()
-        self.model.save_weights('./data/output/keras_model_weight.h5')
-        model_json = self.model.to_json()
-        json.dump(model_json, open("./data/output/model_json.json", "w"), indent=4)
+        # self.model.save_weights('./data/output/keras_model_weight.h5')
+        # model_json = self.model.to_json()
+        # json.dump(model_json, open("./data/output/model_json.json", "w"), indent=4)
+        self.model.save('./data/output', save_format="tf")
 
         print('export saved model.')
 
 
 if __name__ == '__main__':
     trainer = Trainer()
-    trainer.train_model(epochs=2, train_data=ds_train, valid_data=ds_test)
+    trainer.train_model(epochs=5, train_data=ds_train, valid_data=ds_test)

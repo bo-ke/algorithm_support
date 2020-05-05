@@ -14,6 +14,7 @@
 import os
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import json
 
 from dataset_reader import x_train, x_test, y_train, y_test
 
@@ -42,8 +43,12 @@ class Model:
                             validation_data=(x_test, y_test)
                             # validation_split=0.2  # 分割一部分训练数据用于验证
                             )
-        os.mkdir(output_dir)
-        model.save(output_dir + '/keras_model.h5')
+        # os.mkdir(output_dir)
+        # model.save(output_dir + '/keras_model.h5')
+        model.save_weights('./data/output/keras_model_weight.h5')
+        model_json = model.to_json()
+        print(type(model_json))
+        json.dump(model_json, open("./data/output/model_json.json", "w"), indent=2)
         self.plot_metric(history, "loss")
         self.plot_metric(history, "AUC")
 
