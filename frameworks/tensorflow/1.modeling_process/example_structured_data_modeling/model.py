@@ -39,7 +39,8 @@ class Model:
         history = model.fit(x_train, y_train,
                             batch_size=64,
                             epochs=30,
-                            validation_split=0.2  # 分割一部分训练数据用于验证
+                            validation_data=(x_test, y_test)
+                            # validation_split=0.2  # 分割一部分训练数据用于验证
                             )
         os.mkdir(output_dir)
         model.save(output_dir + '/keras_model.h5')
