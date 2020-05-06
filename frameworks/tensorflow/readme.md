@@ -2,7 +2,7 @@
 > 柯博 2020.04.21 1:07  
 
 ### Learning progress
-- [ ]  TensorFlow建模流程
+- [x]  [modeling process](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process)
 - [ ]  TensorFlow的核心概念
 - [ ]  TensorFlow的层次结构
 - [ ]  TensorFlow的低阶API

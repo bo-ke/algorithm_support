@@ -33,6 +33,5 @@
 - 使用TensorFlow原生方式保存（可以跨平台部署）
 
 ## examples
-1. 结构化数据建模示例
-2. 图像数据建模示例
-3. 文本数据建模示例
+[1. 结构化数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_structured_data_modeling)  
+[2. 文本数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_text_data_modeling)
