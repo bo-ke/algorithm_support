@@ -13,7 +13,8 @@
 """
 import tensorflow as tf
 from tensorflow.keras.layers.experimental.preprocessing import TextVectorization
-import re, string
+import re
+import string
 
 train_data_path = "./data/imdb/train.csv"
 test_data_path = "./data/imdb/test.csv"
