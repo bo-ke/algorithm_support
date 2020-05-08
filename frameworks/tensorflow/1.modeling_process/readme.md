@@ -34,4 +34,5 @@
 
 ## examples
 [1. 结构化数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_structured_data_modeling)  
-[2. 文本数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_text_data_modeling)
+[2. 文本数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_text_data_modeling)  
+[3. 序列化数据建模示例](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process/example_temporal_sequences_modeling)
