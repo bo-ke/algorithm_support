@@ -7,3 +7,4 @@
 
 - [frameworks](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks)
     - [TensorFlow2.0](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow)
+    - [PyTorch](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/pytorch)
