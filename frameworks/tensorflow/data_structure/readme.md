@@ -44,3 +44,41 @@ False
 ## 获取张量的维度
 可以简单的总结为：有几层中括号，就是多杀维的张量  
 可以通过`tf.rank()`跟`tensor.numpy().ndim`得到
+
+## 变量张量
+模型中需要被训练的参数一般被设置为变量
+```python
+# 常量值不可以改变，常量的重新赋值相当于创造新的内存空间
+import tensorflow as tf
+c = tf.constant([1.0, 2.0])
+print(c)
+print(id(c))
+c = c+tf.constant([1.0, 1.0])
+print(c)
+print(id(c))
+```
+
+```shell script
+tf.Tensor([1. 2.], shape=(2,), dtype=float32)
+5276289568
+tf.Tensor([2. 3.], shape=(2,), dtype=float32)
+5276290240
+```
+
+```python
+# 变量的值可以改变，可以通过assign, assign_add等方法给变量重新赋值
+import tensorflow as tf
+v = tf.Variable([1.0, 2.0], name="v")
+print(v)
+print(id(v))
+v.assign([1.0, 2.0])
+print(v)
+print(id(v))
+```
+
+```shell script
+<tf.Variable 'v:0' shape=(2,) dtype=float32, numpy=array([1., 2.], dtype=float32)>
+5276259888
+<tf.Variable 'v:0' shape=(2,) dtype=float32, numpy=array([2., 3.], dtype=float32)>
+5276259888
+```

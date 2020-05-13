@@ -3,7 +3,7 @@
 
 ### Learning progress
 - [x]  [modeling process](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process)
-- [ ]  data structure
+- [ ]  data structure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         21
 - [ ]  TensorFlow的层次结构
 - [ ]  TensorFlow的低阶API
 - [ ]  TensorFlow的中阶API
