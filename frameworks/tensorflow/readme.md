@@ -3,8 +3,8 @@
 
 ### Learning progress
 - [x]  [modeling process](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process)
-- [ ]  data structure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         21
-- [ ]  TensorFlow的层次结构
+- [x]  [data structure](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/data_structure)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         21
+- [ ]  [calculation_chart](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/carculation_chart)
 - [ ]  TensorFlow的低阶API
 - [ ]  TensorFlow的中阶API
 - [ ]  TensorFlow的高阶API
