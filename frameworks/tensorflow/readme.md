@@ -3,7 +3,7 @@
 
 ### Learning progress
 - [x]  [modeling process](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/1.modeling_process)
-- [x]  [data structure](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/data_structure)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         21
+- [x]  [data structure](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/data_structure)
 - [x]  [calculation_chart](https://github.com/whu-SpongeBob/algorithm_support/tree/master/frameworks/tensorflow/carculation_chart)
 - [ ]  low-level api
 - [ ]  intermediate api
